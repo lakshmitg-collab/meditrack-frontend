@@ -9,7 +9,8 @@ export default function PatientDashboard() {
   const logged = JSON.parse(localStorage.getItem("user"));
   const loggedName = logged?.name?.trim()?.toLowerCase();
 
-  const API = process.env.REACT_APP_API_URL;
+  const API = process.env.REACT_APP_API_URL || "https://meditrack-backend-one.vercel.app";
+
 
 
 

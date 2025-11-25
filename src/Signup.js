@@ -6,7 +6,8 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
 
-  const API = process.env.REACT_APP_API_URL;
+ const API = process.env.REACT_APP_API_URL || "https://meditrack-backend-one.vercel.app";
+
 
  // ⭐ Use backend from .env
 

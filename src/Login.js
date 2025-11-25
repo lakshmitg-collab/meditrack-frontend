@@ -5,7 +5,8 @@ function Login({ onLogin }) {
   const [password, setPassword] = useState("");
 
   const loginUser = () => {
-   const API = process.env.REACT_APP_API_URL;
+   const API = process.env.REACT_APP_API_URL || "https://meditrack-backend-one.vercel.app";
+
 
  // ⭐ Load from .env
 
