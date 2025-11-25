@@ -11,7 +11,8 @@ export default function DoctorDashboard() {
   const [doctorPrescriptions, setDoctorPrescriptions] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const API = process.env.REACT_APP_API_URL;
+  const API = "https://meditrack-backend-kv7j515rl-lakshmis-projects-0a43a3a0.vercel.app";
+
 
   // ⭐ useCallback prevents ESLint warning
   const loadDoctorPrescriptions = useCallback(

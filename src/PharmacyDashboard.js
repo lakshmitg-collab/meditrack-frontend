@@ -14,7 +14,8 @@ export default function PharmacyDashboard() {
 
   const [showPrescriptions, setShowPrescriptions] = useState(false);
 
-  const API = process.env.REACT_APP_API_URL;
+  const API = "https://meditrack-backend-kv7j515rl-lakshmis-projects-0a43a3a0.vercel.app";
+
 
   // LOAD DATA
   const load = useCallback(() => {

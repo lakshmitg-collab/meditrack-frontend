@@ -9,7 +9,8 @@ export default function PatientDashboard() {
   const logged = JSON.parse(localStorage.getItem("user"));
   const loggedName = logged?.name?.trim()?.toLowerCase();
 
-  const API = process.env.REACT_APP_API_URL;
+  const API = "https://meditrack-backend-kv7j515rl-lakshmis-projects-0a43a3a0.vercel.app";
+
 
   useEffect(() => {
     // FETCH ALL PRESCRIPTIONS
